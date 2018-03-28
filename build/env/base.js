@@ -26,20 +26,16 @@ module.exports =  {
         new CheckerPlugin()
     ],
     resolve: {
-        extensions: ['', '.js', '.vue', '.jsx'],
+        extensions: ['', '.js', '.jsx', ".ts", ".tsx"],
         alias: {
-            'common-css': process.cwd() + "/common/assets/css/common.less",
-            'common-imgs': process.cwd() +  "/common/assets/imgs",
-            'biz-imgs': process.cwd() + "/page/" + platform + "/" + projectPath + "/static/imgs",
-            zepto: process.cwd() + '/common/assets/js/vendor/zepto.js',
-            vue: 'vue/dist/vue.js'
+            'biz-imgs': `${process.cwd()}/page/${platform}/${projectPath}/${pageName}/static/imgs`
         }
     },
     module: {
         loaders: [ //加载器，关于各个加载器的参数配置，可自行搜索之。
             {
                 test: /\.tsx?$/,
-                loader: "awesome-typescript-loader"
+                loader: "babel-loader!awesome-typescript-loader"
             },
             {
                 enforce: "pre",
@@ -53,10 +49,6 @@ module.exports =  {
                 query: {
                     presets: ["react"]
                 }
-            },
-            {
-                test: /\.vue$/,
-                loader: 'vue'
             },
             {
                 test: /\.json$/,

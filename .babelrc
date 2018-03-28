@@ -1,0 +1,6 @@
+{
+    "presets": ["es2015", "react-native-stage-0/decorator-support"],
+    "plugins": ["transform-runtime", "transform-object-assign"],
+    "comments": false
+  }
+  
