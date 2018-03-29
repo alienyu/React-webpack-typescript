@@ -4,9 +4,17 @@
     "sourceMap": true,
     "module": "commonjs",
     "target": "es5",
-    "jsx": "react"
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "lib": [
+      "es2016",
+      "dom"
+    ],
   },
   "include": [
-    "./src/**/*"
+    "./page/**/*"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }

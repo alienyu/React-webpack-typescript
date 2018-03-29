@@ -21,18 +21,18 @@ let envConf = merge(bizConf, {
         host: perConf.host || "localhost",
         port: 7777, //默认8080
         inline: true, //可以监控js变化
-        hot: true //热启动
+        hot: true,
+        historyApiFallback: true
     }
 });
 
 let vendorEntry = Object.keys(envConf.entry);
 function runtime(page) {
-    var entryID = platform + '-' + projectPath.replace("/", "-") + "/" + page; // web-multiPageBiz/level/test
+    var entryID = page; // web-multiPageBiz/level/test
     var fileRoute = process.cwd() + "/page/" + platform + "/" + projectPath + "/main/" + page; //page/web/multiPageBiz/main/level/test
     envConf.entry[entryID] = fileRoute + "/" + page.split("/").pop() + ".tsx"; //page/web/multiPageBiz/main/test/test.js
     envConf.plugins.push(new HtmlWebpackPlugin({
         //根据模板插入css/js等生成最终HTML
-        filename: entryID + ".html",
         //生成的html存放路径，相对于path
         template: fileRoute + "/" + page.split("/").pop() + '.html',
         //js插入的位置，true/'head'/'body'/false

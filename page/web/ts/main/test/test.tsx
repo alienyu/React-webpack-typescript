@@ -1,9 +1,13 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import 'antd/dist/antd.css';
+import App from './views/app';
 
-import { Hello } from "./components/Hello";
-
-ReactDOM.render(
-    <Hello compiler="TypeScript" framework="React" />,
-    document.getElementById("root")
-);
+ReactDOM.render((
+    <BrowserRouter>
+        <Switch>
+            <Route path='/' component={App} />
+        </Switch>
+    </BrowserRouter>
+), document.getElementById("root"));
