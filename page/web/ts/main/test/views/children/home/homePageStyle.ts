@@ -9,7 +9,7 @@ const Home = styled.div`
     .nav{
         display: -webkit-box; 
         display: box; 
-        width:510px;
+        width:85%;
         a{
              display:block;
              color:white;
@@ -23,7 +23,7 @@ const Home = styled.div`
              padding:5px 0;
         }
         a.hover{
-
+            background:#1a568f
         }
     }
 `
