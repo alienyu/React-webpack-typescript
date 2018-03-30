@@ -28,7 +28,7 @@ module.exports =  {
     resolve: {
         extensions: ['', '.js', '.jsx', ".ts", ".tsx"],
         alias: {
-            'biz-imgs': `${process.cwd()}/page/${platform}/${projectPath}/${pageName}/static/imgs`
+            'biz-imgs': `${process.cwd()}/page/${platform}/${projectPath}/main/${pageName}/static/imgs`
         }
     },
     module: {
