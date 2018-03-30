@@ -3,6 +3,7 @@
 
 
 tsconfig.json:解析之后的相对路径=》baseUrlVal+pathVal
+
     "baseUrl": ".",
     paths": {
         "@style/*": ["page/web/ts/main/test/components/style/*"],
