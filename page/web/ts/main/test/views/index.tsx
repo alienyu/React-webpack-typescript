@@ -2,7 +2,8 @@ import * as React from "react";
 import { Link } from 'react-router-dom';
 // import { Root } from "../components/style/style";
 import { Root } from "@style/style";
-import d2  from "@model/data2";
+import d2 from "@model/data2";
+let d3= require("testFold/model/data3"); 
 class Index extends React.Component<{}, {}> {
     render() {
         return (
@@ -13,6 +14,8 @@ class Index extends React.Component<{}, {}> {
                 <Link to={{ pathname: '/pageB' }}>Go To PageB</Link>
                 <p>{d2.a}</p>
                 <p>{d2.b}</p>
+                <p>{d3.a}</p>
+                <p>{d3.b}</p>
                 </div>
             </Root>
         )
