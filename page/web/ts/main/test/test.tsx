@@ -2,13 +2,13 @@ import * as React from "react";
 import * as ReactDOM from "react-dom";
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import 'antd/dist/antd.css';
-import App from './views/app';
+import Layout from './views/layout';
 import rocky from './static/biz/rocky';
 
 ReactDOM.render((
     <BrowserRouter>
         <Switch>
-            <Route path='/' component={App} />
+            <Route path='/' component={Layout} />
         </Switch>
     </BrowserRouter>
 ), document.getElementById("root"));
