@@ -1,0 +1,14 @@
+module.exports={
+    ajax:{
+        host:'127.0.0.1',
+        apiList:{
+            'login':'/admin/a/login'
+        }
+    },
+    apiUrl:'',
+    ws:{
+        domain:"",
+        //以下是业务相关静态变量
+        USER:"",
+    }
+}

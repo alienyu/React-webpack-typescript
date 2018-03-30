@@ -3,6 +3,7 @@ import { Input } from 'antd';
 import { observer } from "mobx-react";
 import observableTodoStore from '../../../../../model/use';
 import {timerData} from '../../../../../model/data';
+import ajax from '../../../../../static/modules/ajax';
 export interface AProps { text: string; }
 export interface AState { txt: string; }
 
@@ -30,6 +31,8 @@ export class SubPageA extends React.Component<AProps, AState> {
         observableTodoStore.todos[0].completed = true;
         observableTodoStore.todos[1].task = "try MobX in own project";
         observableTodoStore.todos[0].task = "grok MobX tutorial";
+        console.log(ajax.host)
+        console.log(ajax.apiList)
     }
     render() {
         return (

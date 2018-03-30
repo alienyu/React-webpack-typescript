@@ -12,7 +12,9 @@ module.exports = merge(baseConf, {
     },
     resolve: {
         alias: {
-            "common": `${process.cwd()}/page/${platform}/${projectPath}/main/${pageName}/static/module/common.js`
+            "common": `${process.cwd()}/page/${platform}/${projectPath}/main/${pageName}/static/module/common.js`,
+            "ajax": `${process.cwd()}/page/${platform}/${projectPath}/main/${pageName}/static/module/ajax.js`,
+            "config": `${process.cwd()}/page/${platform}/${projectPath}/main/${pageName}/static/module/config.js`,
         }
     },
     output: {
@@ -25,7 +27,9 @@ module.exports = merge(baseConf, {
         }),
 
         new webpack.ProvidePlugin({
-            'common': 'common'
+            'common': 'common',
+            'ajax': 'ajax',
+            'globConf':'config',
         })
     ]
 });

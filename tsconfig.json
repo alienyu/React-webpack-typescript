@@ -1,16 +1,22 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "config": [
+        "page/web/ts/main/test/static/modules/config"
+      ]
+    },
     "outDir": "./dist/",
     "sourceMap": true,
     "module": "commonjs",
     "target": "es5",
     "jsx": "react",
-    "experimentalDecorators":true,
+    "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
     "lib": [
       "es2016",
       "dom"
-    ],
+    ]
   },
   "include": [
     "./page/**/*"
