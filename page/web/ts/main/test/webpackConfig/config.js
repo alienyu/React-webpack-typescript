@@ -14,7 +14,7 @@ module.exports = merge(baseConf, {
         alias: {
             "common": `${process.cwd()}/page/${platform}/${projectPath}/main/${pageName}/static/module/common.js`,
             "ajax": `${process.cwd()}/page/${platform}/${projectPath}/main/${pageName}/static/module/ajax.js`,
-            "config": `${process.cwd()}/page/${platform}/${projectPath}/main/${pageName}/static/module/config.js`,
+            "config": `${process.cwd()}/page/${platform}/${projectPath}/main/${pageName}/static/modules/config.js`,
         }
     },
     output: {

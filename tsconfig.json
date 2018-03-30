@@ -1,11 +1,10 @@
 {
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": ".",
     "paths": {
-      "config": [
-        "page/web/ts/main/test/static/modules/config"
-      ]
-    },
+      "@style/*": ["page/web/ts/main/test/components/style/*"],
+      "@model/*": ["page/web/ts/main/test/model/*"]
+    },  
     "outDir": "./dist/",
     "sourceMap": true,
     "module": "commonjs",

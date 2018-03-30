@@ -29,7 +29,9 @@ module.exports =  {
         extensions: ['', '.js', '.jsx', ".ts", ".tsx"],
         alias: {
             'biz-imgs': `${process.cwd()}/page/${platform}/${projectPath}/main/${pageName}/static/imgs`,
-            "testFold": `${process.cwd()}/page/${platform}/${projectPath}/main/${pageName}`
+            "testFold": `${process.cwd()}/page/${platform}/${projectPath}/main/${pageName}`,
+            '@style':`${process.cwd()}/page/${platform}/${projectPath}/main/${pageName}/components/style`,
+            '@model':`${process.cwd()}/page/${platform}/${projectPath}/main/${pageName}/model`,
         }
     },
     module: {
