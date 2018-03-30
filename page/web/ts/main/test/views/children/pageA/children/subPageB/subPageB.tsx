@@ -1,5 +1,5 @@
 import * as React from "react";
-import {timerData} from '../../../../../model/data';
+import {timerData} from '@model/data';
 import { observer } from "mobx-react";
 export interface BProps { text: string; }
 
