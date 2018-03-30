@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from 'react-router-dom';
-import { Root } from "../components/style/style";
-import rocky from '../static/biz/rocky';
+import { Root } from "@style/style";
+import rocky from '@static/biz/rocky';
 
 class Index extends React.Component<{}, {}> {
 

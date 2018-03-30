@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Route, Switch, Link } from 'react-router-dom'
-import { timerData } from '../../../model/data';
+import { timerData } from '@model/data';
 import { SubPageA } from "./children/subPageA/subPageA";
 import { SubPageB } from "./children/subPageB/subPageB";
 import { observer } from "mobx-react";

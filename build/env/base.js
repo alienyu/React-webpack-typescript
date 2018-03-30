@@ -22,13 +22,16 @@ module.exports =  {
 
         new ExtractTextPlugin('[name].css'), //单独使用link标签加载css并设置路径，相对于output配置中的publicePath
 
-        new webpack.HotModuleReplacementPlugin(), //热加载
+        new webpack.HotModuleReplacementPlugin(), //热加载static
         new CheckerPlugin()
     ],
     resolve: {
         extensions: ['', '.js', '.jsx', ".ts", ".tsx"],
         alias: {
-            'biz-imgs': `${process.cwd()}/page/${platform}/${projectPath}/main/${pageName}/static/imgs`
+            'biz-imgs': `${process.cwd()}/page/${platform}/${projectPath}/main/${pageName}/static/imgs`,
+            '@static': `${process.cwd()}/page/${platform}/${projectPath}/main/${pageName}/static`,
+            '@model': `${process.cwd()}/page/${platform}/${projectPath}/main/${pageName}/model`,
+            '@style': `${process.cwd()}/page/${platform}/${projectPath}/main/${pageName}/components/style`,
         }
     },
     module: {

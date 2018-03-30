@@ -1,8 +1,8 @@
 import * as React from "react";
 import { Input } from 'antd';
 import { observer } from "mobx-react";
-import observableTodoStore from '../../../../../model/use';
-import {timerData} from '../../../../../model/data';
+import observableTodoStore from '@model/use';
+import {timerData} from '@model/data';
 export interface AProps { text: string; }
 export interface AState { txt: string; }
 

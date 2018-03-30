@@ -3,7 +3,7 @@ import * as ReactDOM from "react-dom";
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import 'antd/dist/antd.css';
 import App from './views/app';
-import rocky from './static/biz/rocky';
+import rocky from '@static/biz/rocky';
 
 ReactDOM.render((
     <BrowserRouter>
