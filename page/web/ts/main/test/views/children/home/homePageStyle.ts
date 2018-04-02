@@ -1,5 +1,5 @@
 import styled from "styled-components";
-const img=require('biz-imgs/indexBanner.png')
+const img = require('biz-imgs/indexBanner.png')
 
 const Home = styled.div`
     padding:10px;
@@ -27,6 +27,4 @@ const Home = styled.div`
         }
     }
 `
-module.exports = {
-    Home
-}
+export { Home as Home };
