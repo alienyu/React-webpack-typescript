@@ -33,7 +33,7 @@ module.exports =  {
             'biz-comp':`${process.cwd()}/page/${platform}/${projectPath}/main/${pageName}/components/biz/`,
             '@static': `${process.cwd()}/page/${platform}/${projectPath}/main/${pageName}/static`,
             '@model': `${process.cwd()}/page/${platform}/${projectPath}/main/${pageName}/model`,
-            '@style': `${process.cwd()}/page/${platform}/${projectPath}/main/${pageName}/components/style`
+            '@style': `${process.cwd()}/page/${platform}/${projectPath}/main/${pageName}/components/style`,
         }
     },
     module: {
@@ -89,13 +89,16 @@ module.exports =  {
                 loader: "html?attrs=img:src img:data-src&minimize=false"
             }, {
                 //文件加载器，处理文件静态资源
-                test: /\.(eot|svg|ttf|woff|woff2)(\?\S*)?$/,
+                test: /\.(eot|ttf|woff|woff2)(\?\S*)?$/,
                 loader: 'file-loader?name=common/fonts/[name].[ext]'
             }, {
                 //图片加载器，雷同file-loader，更适合图片，可以将较小的图片转成base64，减少http请求
                 //如下配置，将小于8192byte的图片转成base64码
                 test: /\.(png|jpg|gif|jpeg)$/,
                 loader: 'url-loader?limit=8192&name=common/imgs/[hash].[ext]'
+            }, {
+                test: /\.svg$/,
+                loader: 'svg-url-loader'
             }
         ]
     }

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-const img=require('biz-imgs/indexBanner.png')
+const img = require('biz-imgs/indexBanner.png')
 
 const Home = styled.div`
     .banner{
@@ -7,8 +7,8 @@ const Home = styled.div`
     }
     
 `
-/*module.exports = {
-    Home
-}
-*/
+
 export default Home;
+//?
+export { Home as Home };
+

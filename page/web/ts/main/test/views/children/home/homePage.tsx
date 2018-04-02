@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import  Home  from "./homePageStyle";
 
 
-const rocky = require('biz-js/rocky');
+const rocky = require('@static/biz/rocky');
 const banner02 = require('biz-imgs/homeBanner02.jpg');
 const banner = require('biz-imgs/homeBanner.jpg');
 
