@@ -26,9 +26,9 @@ const NavTag = styled.div`
 
 function Nav(){
     return (<NavTag>
-        <NavLink to={{ pathname: '/home' }} activeClassName='hover'>Home page</Link> 
-        <NavLink to={{ pathname: '/pageA' }} activeClassName='hover'>PageA</Link> 
-        <NavLink to={{ pathname: '/pageB' }} activeClassName='hover'>PageB</Link>
+        <NavLink to={{ pathname: '/home' }} activeClassName='hover'>Home page</NavLink> 
+        <NavLink to={{ pathname: '/pageA' }} activeClassName='hover'>PageA</NavLink> 
+        <NavLink to={{ pathname: '/pageB' }} activeClassName='hover'>PageB</NavLink>
     </NavTag>);
 }
 
