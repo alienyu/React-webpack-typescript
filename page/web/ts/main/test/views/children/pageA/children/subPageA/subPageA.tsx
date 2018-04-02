@@ -34,6 +34,7 @@ export class SubPageA extends React.Component<AProps, AState> {
     render() {
         return (
             <div>
+                <h1>this a subPageA. I am pageA's child router</h1>
                 <h1>pageA's subpageA value is {this.props.text}</h1>
                 <Input type="text" onChange={this.handleChange.bind(this)} />
                 <button onClick={this.handleClick.bind(this)}>click</button>

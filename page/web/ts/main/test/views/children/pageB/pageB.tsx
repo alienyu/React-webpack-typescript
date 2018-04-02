@@ -19,6 +19,8 @@ class pageB extends React.Component<pageBProps, pageBState> {
         this.setState({textA: "changeTextA"})
     }
 
+    //this.props.match
+    
     render() {
         console.log("render hello")
         return (

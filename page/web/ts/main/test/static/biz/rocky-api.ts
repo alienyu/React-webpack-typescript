@@ -71,9 +71,12 @@ initApiFuns();
 export default apiObj;
 
 /*
-
 //页面使用参考
 import apiObj from './apiPath/apiObj';
+
+
+只关心输入params和输出response,
+自定价错误写在rocky-api-errors.ts
 
 apiObj.getCompanyInfo(params).then(response=>{
     ...biz code here

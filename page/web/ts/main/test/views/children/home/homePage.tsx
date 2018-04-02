@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Link } from 'react-router-dom';
-import { Home } from "./homePageStyle";
+import  Home  from "./homePageStyle";
+
 
 const rocky = require('biz-js/rocky');
 const banner02 = require('biz-imgs/homeBanner02.jpg');
@@ -23,12 +24,6 @@ class HomePage extends React.Component<{}, {}> {
     render() {
         return (
             <Home>
-                <div className="nav">
-                    <a className="hover">Home page</a>
-                    <Link to={{ pathname: '/pageA' }}>PageA</Link> 
-                    <Link to={{ pathname: '/pageB' }}>PageB</Link>
-                </div>
-
                 <h2>This is default page</h2>
                 <img src={banner}  className="banner"/>
                 <img src={banner02}  className="banner"/>

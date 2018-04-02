@@ -14,6 +14,7 @@ export class SubPageB extends React.Component<BProps, {}> {
     render() {
         return (
             <div>
+                <h1>this a subPageB. I am pageB's child router</h1>
                 <h1>pageA's subpageB value is {this.props.text}</h1>
                 <span>subpageB Seconds passed: { timerData.secondsPassed } </span>
             </div>

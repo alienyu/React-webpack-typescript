@@ -5,5 +5,8 @@ const layout = styled.div`
     .content{
         height:500px;
         background:#fff;
+        padding:10px;
     }
 `
+
+export default layout;

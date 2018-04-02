@@ -30,6 +30,7 @@ module.exports =  {
         alias: {
             'biz-imgs': `${process.cwd()}/page/${platform}/${projectPath}/main/${pageName}/static/imgs`,
             'biz-js': `${process.cwd()}/page/${platform}/${projectPath}/main/${pageName}/static/biz`,
+            'biz-comp':`${process.cwd()}/page/${platform}/${projectPath}/main/${pageName}/components/biz/`,
             '@static': `${process.cwd()}/page/${platform}/${projectPath}/main/${pageName}/static`,
             '@model': `${process.cwd()}/page/${platform}/${projectPath}/main/${pageName}/model`,
             '@style': `${process.cwd()}/page/${platform}/${projectPath}/main/${pageName}/components/style`
